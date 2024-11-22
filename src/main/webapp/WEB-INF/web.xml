@@ -1,0 +1,31 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+
+<servlet>
+<servlet-name>EnterNoticeServlet</servlet-name>
+<servlet-class>com.notice.EnterNoticeServlet </servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>EnterNoticeServlet</servlet-name>
+<url-pattern>/insert</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+<servlet-name>UpdateDataServlet</servlet-name>
+<servlet-class>com.notice.UpdateDataServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>UpdateDataServlet</servlet-name>
+<url-pattern>/update</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+<servlet-name>DeleteNoticeDataServlet</servlet-name>
+<servlet-class>com.notice.DeleteNoticeDataServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>DeleteNoticeDataServlet</servlet-name>
+<url-pattern>/delete</url-pattern>
+</servlet-mapping>
+</web-app>
